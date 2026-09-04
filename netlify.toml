@@ -1,0 +1,30 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.162.1"
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/neko-plus"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/mJQByYERZg"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/telegram"
+  to = "https://t.me/nekoplusofficial"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 302
+  force = true

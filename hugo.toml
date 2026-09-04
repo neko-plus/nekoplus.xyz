@@ -1,0 +1,5 @@
+baseURL = 'https://nekoplus.xyz'
+locale = 'en-us'
+title = 'Neko+'
+
+disableKinds = ["taxonomy", "term"]

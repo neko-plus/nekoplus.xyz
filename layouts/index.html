@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div
+  class="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#ff7bbd] font-['Zyzol',system-ui,sans-serif]"
+>
+  <div
+    class="pattern absolute -inset-1/2 rotate-45 opacity-50 [background-size:140px_140px] [background-position:0_100%] [animation:drift_50s_linear_infinite]"
+    style="background-image: url('/pattern.svg')"
+  ></div>
+
+  <div class="relative z-10 flex flex-col items-center gap-6 px-4 sm:gap-8">
+    <img class="w-60" src="/logo.png" alt="logo" />
+
+    <div id="countdown" class="flex items-baseline gap-2 sm:gap-3 md:gap-4"></div>
+
+    <div class="flex items-center gap-4">
+      <a
+        href="/github"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex h-14 w-14 items-center justify-center rounded-full transition hover:scale-110 hover:bg-white/25"
+        aria-label="GitHub"
+      >
+        <img class="h-10 w-10" src="/github.svg" alt="GitHub" />
+      </a>
+      <a
+        href="/discord"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex h-14 w-14 items-center justify-center rounded-full transition hover:scale-110 hover:bg-white/25"
+        aria-label="Discord"
+      >
+        <img class="h-10 w-10" src="/discord.svg" alt="Discord" />
+      </a>
+      <a
+        href="/telegram"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex h-14 w-14 items-center justify-center rounded-full transition hover:scale-110 hover:bg-white/25"
+        aria-label="Telegram"
+      >
+        <img class="h-10 w-10" src="/telegram.svg" alt="Telegram" />
+      </a>
+    </div>
+  </div>
+</div>
+{{ end }}
